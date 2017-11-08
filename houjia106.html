@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>後甲106班級網頁</title>
+		<link rel="shortcut icon" href="其他/106.ico">
+		<style type="text/css">
+		* {
+			animation: fadeIn 3s;
+		}
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+		*{ 
+			padding: 0; margin: 0;
+		}
+		body {
+			overflow: hidden; 
+		}
+		a { 
+			text-decoration: none; color: #00AAAA; 
+		}
+		li { 
+			list-style-type: none; 
+		}
+		header { 
+			width: 100%; 
+			height: 50px; 
+			margin: auto;
+		}
+		#bgimg {
+			position: absolute;
+			z-index: -1;
+			filter: blur(5px);
+			width: 1200px;
+		}
+		#brand {
+			text-align: center;
+			line-height: 50px;
+			color: balck;
+			font-size: 55px;
+			font-weight: bolder;
+			padding-top: 70px;
+			font-family:Microsoft JhengHei;
+		}
+		nav { 
+			width: 100%; text-align: center; 
+		}
+		nav a { 
+			display: block; 
+			padding: 15px 0;
+			border-bottom: 1px solid #EEE;
+		}
+		nav a:hover { 
+			background: #00AAAA; color: #FFF; 
+		}
+		nav li:last-child a { 
+			border-bottom: none; 
+		}
+	/**********************************
+	code by houjia 10603
+
+                       _oo0oo_
+                      o8888888o
+                      88" . "88
+                      (| -_- |)
+                      0\  =  /0
+                    ___/`---'\___
+                  .' \\|     |// '.
+                 / \\|||  :  |||// \
+                / _||||| -:- |||||- \
+               |   | \\\  -  /// |   |
+               | \_|  ''\---/''  |_/ |
+               \  .-\__  '-'  ___/-. /
+             ___'. .'  /--.--\  `. .'___
+          ."" '<  `.___\_<|>_/___.' >' "".
+         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+         \  \ `_.   \_ __\ /__ _/   .-` /  /
+     =====`-.____`.___ \_____/___.-`___.-'=====
+                       `=---='
+
+
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+               佛祖保佑         永無bug
+
+	***********************************/
+		.menu {
+			width: 240px;
+			height: 100%;
+			position: absolute;
+			background: #DDD;
+			left: -240px;
+			transition: all .3s ease-in-out;
+			-webkit-transition: all .3s ease-in-out;
+			-moz-transition: all .3s ease-in-out;
+			-ms-transition: all .3s ease-in-out;
+			-o-transition: all .3s ease-in-out;
+	
+		}
+		.menu-icon {
+			padding: 10px 20px;
+			background: #DDD;
+			color: #000000;
+			cursor: pointer;
+			margin-top: 4px;
+			border-radius: 5px;
+			float: right;
+		}
+		#menuToggle { 
+			display: none; 
+		}
+		#menuToggle:checked ~ .menu { 
+			position: absolute; left: 0; 
+		}
+		/************手機畫面*****************/
+		@media (max-width: 320px) {
+			#brand {
+				font-size: 30px;
+			}
+			.manu{
+				width: 120px;
+			}
+			.manu-icon {
+				width: 20px;
+				height: 10px;
+			}
+		}
+		/************************************/
+		</style>
+	</head>
+	<body>
+		<img id="bgimg" src="http://static.panoramio.com/photos/large/80101519.jpg">
+		<input type="checkbox" id="menuToggle">
+		<label for="menuToggle" class="menu-icon">&#9776;</label>
+		<nav class="menu">
+			<ul>
+				<li>
+					<a href="其他/class.html">
+					班級課表
+					</a>
+				</li>
+				<li>
+					<a href="其他/106pictures.html">
+					活動照片
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					班級人物
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					課堂五四三
+					</a>
+				</li>
+				<li>
+					<a href="http://ww3.hcjh.tn.edu.tw">
+					學校首頁
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<header>
+			<div id="brand">後甲106</div>
+		</header>
+	</body>
+</html>
